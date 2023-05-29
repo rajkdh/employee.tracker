@@ -21,12 +21,14 @@ const connection = mysql.createConnection({
         name: "task",
         message: "What would you like to do?",
         choices: [
-          "View Employees",
-          "View Employees by Department",
+          "View all Employees",
+          "View all Departments",
+          "View all roles",
           "Add Employee",
           "Remove Employees",
           "Update Employee Role",
           "Add Role",
+          "Add department",
           "Exit"]
             
     })
