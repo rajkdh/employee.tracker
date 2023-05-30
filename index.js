@@ -25,8 +25,8 @@ const connection = mysql.createConnection({
           "View all Departments",
           "View all roles",
           "Add Employee",
+           "Update Employee Role",
           "Remove Employees",
-          "Update Employee Role",
           "Add Role",
           "Add department",
           "Exit"]
