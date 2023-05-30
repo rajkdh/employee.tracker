@@ -4,14 +4,21 @@ CREATE DATABASE employeeDatabase;
 USE employeeDatabase;
 
 CREATE TABLE department (
-id int NOT NULL PRIMARY KEY,
-name varchar(60) NOT NULL
+id INT AUTO_INCRIMENT NOT NULL PRIMARY KEY,
+name VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE role (
-
+id INT AUTO_INCRIMENT PRIMARY KEY,
+title VARCHAR(30) NOT NULL,
+salary DECIMAL NOT NULL,
+department_id INT NOT NULL
 );
 
 CREATE TABLE employee (
-
+id INT AUTO_INCRIMENT PRIMARY KEY.
+first_name VARCHAR(30) NOT NULL,
+last_name VARCHAR(30) NOT NULL,
+role_id INT NOT NULL,
+manager_id INT NULL
 );
