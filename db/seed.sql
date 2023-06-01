@@ -32,7 +32,7 @@ VALUES
 
 
 
--- SELECT DISTINCT * FROM department;
--- SELECT DISTINCT * FROM role;
+SELECT DISTINCT * FROM department;
+SELECT DISTINCT * FROM role;
 SELECT DISTINCT * FROM employee;
 

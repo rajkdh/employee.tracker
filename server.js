@@ -177,7 +177,7 @@ function updateEmployee() {
 }
 
 function viewDepartment() {
-  let query = "SELECT * FROM department";
+  let query = "SELECT DISTINCT * FROM department";
   connection.query(query, function(err, res) {
     if (err) throw err;
     console.table(res);
@@ -186,7 +186,7 @@ function viewDepartment() {
 }
 
 function viewRoles() {
-  let query = "SELECT * FROM role";
+  let query = "SELECT DISTINCT * FROM role";
   connection.query(query, function(err, res) {
     if (err) throw err;
     console.table(res);
@@ -195,7 +195,7 @@ function viewRoles() {
 }
 
 function viewEmployees() {
-  let query = "SELECT * FROM employee";
+  let query = "SELECT DISTINCT * FROM employee";
   connection.query(query, function(err, res) {
     if (err) throw err;
     console.table(res);
