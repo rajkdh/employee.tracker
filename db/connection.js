@@ -4,12 +4,16 @@ const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
   password:"",
-  database: "employeeDatabase",
-  socketPath: '/var/run/mysqld/mysqld.sock'
+  database: "employeedatabase",
 });
 
-connection.connect(function (err) {
-  if (err) throw err;
+connection.connect(function(err) {
+  if (err) {
+    console.error('error connecting: ' + err.stack);
+    return;
+  }
+
+  console.log('connected as id ' + connection.threadId);
 });
 
 module.exports = connection;
