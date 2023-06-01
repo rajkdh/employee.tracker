@@ -35,11 +35,11 @@ function start() {
         "Update employee role",
         "Exit"
       ],
-      message: "What would you like to do?",
+      message: "Select task:",
       name: "option"
     })
     .then(function(result) {
-      console.log(result.option);
+      console.log("Task: " + result.option);
 
       switch (result.option) {
         case "Add department":
